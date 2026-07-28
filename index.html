@@ -1,177 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Agroecology Institute restores degraded land, builds soil, and designs food systems. This website exists because institutions required one.">
-    <meta name="theme-color" content="#000000">
-    <title>AgroEcology Institute</title>
-    <style>
-        :root {
-            --bg: #000;
-            --text: #0f0;
-            --text-dim: #00ca00;
-            --accent: #0f0;
-            --accent-dim: #00b300;
-        }
-        @media (prefers-color-scheme: light) {
-            :root {
-                --bg: #f2efe6;
-                --text: #2a2618;
-                --text-dim: #6a6454;
-                --accent: #3a6e28;
-                --accent-dim: #2a5018;
-            }
-        }
-        body {
-            margin: 3rem auto;
-            max-width: 66ch;
-            line-height: 1.6;
-            font-size: 20px;
-            color: var(--text);
-            background: var(--bg);
-            padding: 0 1.5rem;
-            font-family: Verdana, Geneva, Tahoma, "DejaVu Sans", sans-serif;
-            word-spacing: 0.05em;
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
-            filter: blur(0.63px);
-        }
-        h1, h2 { line-height: 1.25; font-family: Georgia, "Times New Roman", Times, serif; }
-        h1 { font-size: 2em; margin-bottom: 0.25rem; text-align: center; letter-spacing: 0.04em; }
-        h1 + p { text-align: center; font-size: 0.85em; margin-bottom: 0.25rem; }
-        h1 + p + p { text-align: center; font-size: 0.85em; margin-bottom: 1.5rem; }
-        header > p:nth-of-type(3)::first-letter {
-            font-family: Georgia, "Times New Roman", Times, serif;
-            font-size: 3.2em;
-            float: left;
-            line-height: 0.8;
-            padding-right: 0.08em;
-            padding-top: 0.07em;
-            color: var(--accent);
-        }
-        h2 {
-            margin-top: 3.5rem;
-            margin-bottom: 1rem;
-            text-align: center;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            font-size: 1.4em;
-        }
-        section + section { border-top: 1px solid var(--text-dim); padding-top: 2rem; }
-        section > p:first-of-type {
-            font-size: 1.1em;
-            line-height: 1.65;
-        }
-        section > p:first-of-type::first-letter {
-            font-family: Georgia, "Times New Roman", Times, serif;
-            font-size: 3.2em;
-            float: left;
-            line-height: 0.8;
-            padding-right: 0.08em;
-            padding-top: 0.07em;
-            color: var(--accent);
-        }
-        p { margin-bottom: 1rem; }
-        a { color: var(--accent); }
-        a:visited { color: var(--accent-dim); }
-        abbr { text-decoration: none; border-bottom: 1px dotted var(--text-dim); cursor: help; font-variant: small-caps; text-transform: lowercase; }
-        ul { margin: 1rem 0; padding-left: 1.5rem; }
-        li { margin-bottom: 0.5rem; }
-        footer { font-size: 10pt; color: var(--text-dim); border-top: 1px solid var(--text-dim); margin-top: 3rem; padding-top: 1.5rem; text-align: center; letter-spacing: 0.02em; }
-
-        #scanlines {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 9999;
-            background-repeat: repeat;
-            background-image: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.57) 50%);
-            background-size: 100% 2px;
-        }
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            #scanlines { background-size: 100% 1px; }
-        }
-        @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-            #scanlines {
-                background-image: linear-gradient(to bottom, transparent 66.67%, rgba(0,0,0,0.57) 66.67%);
-                background-size: 100% 1px;
-            }
-        }
-        @media (prefers-contrast: more) {
-            body { filter: none; }
-            #scanlines { display: none; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Agroecology Institute restores degraded land, builds soil, and designs food systems. This website exists because institutions required one.">
+<meta name="theme-color" content="#000000">
+<title>AgroEcology Institute</title>
+<style>:root{--bg:#000;--text:#0f0;--text-dim:#00ca00;--accent:#0f0;--accent-dim:#00b300}@media (prefers-color-scheme:light){:root{--bg:#f2efe6;--text:#2a2618;--text-dim:#6a6454;--accent:#3a6e28;--accent-dim:#2a5018}}body{margin:3rem auto;max-width:66ch;line-height:1.6;font-size:20px;color:var(--text);background:var(--bg);padding:0 1.5rem;font-family:Verdana,Geneva,Tahoma,"DejaVu Sans",sans-serif;word-spacing:.05em;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;filter:blur(.63px)}h1,h2{line-height:1.25;font-family:Georgia,"Times New Roman",Times,serif}h1{font-size:2em;margin-bottom:.25rem;text-align:center;letter-spacing:.04em}h1+p{text-align:center;font-size:.85em;margin-bottom:.25rem}h1+p+p{text-align:center;font-size:.85em;margin-bottom:1.5rem}h2{margin-top:3.5rem;margin-bottom:1rem;text-align:center;letter-spacing:.05em;text-transform:uppercase;font-size:1.4em}section+section{border-top:1px solid var(--text-dim);padding-top:2rem}section>p:first-of-type{font-size:1.1em;line-height:1.65}header>p:nth-of-type(3)::first-letter,section>p:first-of-type::first-letter{font-family:Georgia,"Times New Roman",Times,serif;font-size:3.2em;float:left;line-height:.8;padding-right:.08em;padding-top:.07em;color:var(--accent)}p{margin-bottom:1rem}a{color:var(--accent)}a:visited{color:var(--accent-dim)}abbr{text-decoration:none;border-bottom:1px dotted var(--text-dim);cursor:help;font-variant:small-caps;text-transform:lowercase}ul{margin:1rem 0;padding-left:1.5rem}li{margin-bottom:.5rem}footer{font-size:10pt;color:var(--text-dim);border-top:1px solid var(--text-dim);margin-top:3rem;padding-top:1.5rem;text-align:center;letter-spacing:.02em}#scanlines{position:fixed;inset:0;pointer-events:none;z-index:9999;background-repeat:repeat;background-image:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.57) 50%);background-size:100% 2px}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){#scanlines{background-size:100% 1px}}@media (-webkit-min-device-pixel-ratio:3),(min-resolution:288dpi){#scanlines{background-image:linear-gradient(to bottom,transparent 66.67%,rgba(0,0,0,.57) 66.67%);background-size:100% 1px}}@media (prefers-contrast:more){body{filter:none}#scanlines{display:none}}</style>
 </head>
 <body>
-
 <div id="scanlines" aria-hidden="true" role="presentation"></div>
-
 <main aria-labelledby="title">
-
 <header>
-    <h1 id="title">AgroEcology Institute</h1>
-    <p>Email: AgroEcologyTechnic at protonmail .com</p>
-    <p>If you would like to make a charitable tax-deductible donation, please email.</p>
-    <p>We do agroecological design, soil restoration, permaculture (the design of food-producing systems modeled on natural ecosystems), degraded land regeneration, ecological education, applied research, and germplasm repository management.</p>
-    <p>We do not need a website for any of this. What happens if you don't have a website? Banks, insurers, grant programs, government registries, payment processors, and credentialing systems all reject dealing with an organization that doesn't have one, making refusal costly enough to be a compulsory display of &ldquo;legitimacy&rdquo;. Even when direct contact with real humans is available, thoughtless institutional inertia compels an organization dedicated to ecological restoration to validate its existence using unnecessary layers of ecologically destructive technology. No law requires a website, but a social norm that nobody privately supports can bind more tightly than legislation. The empirical expectations (what I see others doing) and normative expectations (what I believe others think I should do) can both be wrong simultaneously: everyone complies, everyone assumes everyone else approves, even if nobody actually does.</p>
-    <p>If you are a bureaucrat discerning whether we are real and not scoundrels, we will plant a tree in your honor for free and text you a photo of it being planted with someone holding a piece of paper with your name written on it. The tree will produce oxygen you need to breathe, remove CO2 from the atmosphere, and create food and habitat for animals. You can even arrange a visit.</p>
-    <p>The web has existed a mere 0.011% of <em>Homo sapiens</em>' 315,000 years. When a website as a representation becomes more socially powerful than the real thing it represents, the website is no longer an appropriate technology aiding a healthy functioning society; it is a dystopian simulacrum replacing it. Is it suspicious and unprofessional to not have a website when it doesn't directly serve a charitable purpose and runs counter to that purpose?</p>
+<h1 id="title">AgroEcology Institute</h1>
+<p>Email: AgroEcologyTechnic at protonmail .com</p>
+<p>If you would like to make a charitable tax-deductible donation, please email.</p>
+<p>We do agroecological design, soil restoration, permaculture (the design of food-producing systems modeled on natural ecosystems), degraded land regeneration, ecological education, applied research, and germplasm repository management.</p>
+<p>We do not need a website for any of this. What happens if you don't have a website? Banks, insurers, grant programs, government registries, payment processors, and credentialing systems all reject dealing with an organization that doesn't have one, making refusal costly enough to be a compulsory display of &ldquo;legitimacy&rdquo;. Even when direct contact with real humans is available, thoughtless institutional inertia compels an organization dedicated to ecological restoration to validate its existence using unnecessary layers of ecologically destructive technology. No law requires a website, but a social norm that nobody privately supports can bind more tightly than legislation. The empirical expectations (what I see others doing) and normative expectations (what I believe others think I should do) can both be wrong simultaneously: everyone complies, everyone assumes everyone else approves, even if nobody actually does.</p>
+<p>If you are a bureaucrat discerning whether we are real and not scoundrels, we will plant a tree in your honor for free and text you a photo of it being planted with someone holding a piece of paper with your name written on it. The tree will produce oxygen you need to breathe, remove CO2 from the atmosphere, and create food and habitat for animals. You can even arrange a visit.</p>
+<p>The web has existed a mere 0.011% of <em>Homo sapiens</em>' 315,000 years. When a website as a representation becomes more socially powerful than the real thing it represents, the website is no longer an appropriate technology aiding a healthy functioning society; it is a dystopian simulacrum replacing it. Is it suspicious and unprofessional to not have a website when it doesn't directly serve a charitable purpose and runs counter to that purpose?</p>
 </header>
-
 <article>
-
 <section aria-labelledby="cost">
-    <h2 id="cost">The Internet Is Not a Cloud</h2>
-
-    <p>It is a supply chain of extraction, combustion, and human suffering that delivers text to a screen.</p>
-
-    <p>Every website runs on a server in a data center consuming electricity for computation and cooling. Roughly 60% of global electricity comes from burning coal, gas, and oil. The hardware requires cobalt, lithium, coltan, copper, tin, tungsten, and rare earth elements. Getting them out of the ground means child miners in hand-dug tunnels in the DRC, millions of liters of water drained from drought-stricken salt flats in South America, radioactive tailings from rare earth processing that poison soil and waterways for decades, tropical forests stripped for tin and tungsten, and copper extraction that generates more toxic waste by volume than any other metal on earth. Refining and smelting these minerals is powered by fossil fuels. The finished hardware crosses oceans on ships burning bunker fuel, the dirtiest fossil fuel in commercial use. It lands in data centers that drink millions of gallons of water for cooling, run industrial air conditioning around the clock, and draw their electricity from coal and gas power plants that poison the air in the communities surrounding them.</p>
-
-    <p>On the human end, the people who mine these minerals suffer collapsed lungs, heavy metal poisoning, crushed limbs, and shortened lives. The communities near processing sites lose their water, their soil, and their children's health. The laborers assembling the hardware work under conditions that have produced mass suicide clusters at factories. The energy infrastructure powering the data centers contributes to respiratory disease, cancer, and climate displacement borne disproportionately by the poorest people on earth.</p>
+<h2 id="cost">The Internet Is Not a Cloud</h2>
+<p>It is a supply chain of extraction, combustion, and human suffering that delivers text to a screen.</p>
+<p>Every website runs on a server in a data center consuming electricity for computation and cooling. Roughly 60% of global electricity comes from burning coal, gas, and oil. The hardware requires cobalt, lithium, coltan, copper, tin, tungsten, and rare earth elements. Getting them out of the ground means child miners in hand-dug tunnels in the DRC, millions of liters of water drained from drought-stricken salt flats in South America, radioactive tailings from rare earth processing that poison soil and waterways for decades, tropical forests stripped for tin and tungsten, and copper extraction that generates more toxic waste by volume than any other metal on earth. Refining and smelting these minerals is powered by fossil fuels. The finished hardware crosses oceans on ships burning bunker fuel, the dirtiest fossil fuel in commercial use. It lands in data centers that drink millions of gallons of water for cooling, run industrial air conditioning around the clock, and draw their electricity from coal and gas power plants that poison the air in the communities surrounding them.</p>
+<p>On the human end, the people who mine these minerals suffer collapsed lungs, heavy metal poisoning, crushed limbs, and shortened lives. The communities near processing sites lose their water, their soil, and their children's health. The laborers assembling the hardware work under conditions that have produced mass suicide clusters at factories. The energy infrastructure powering the data centers contributes to respiratory disease, cancer, and climate displacement borne disproportionately by the poorest people on earth.</p>
 </section>
-
 <section aria-labelledby="page">
-    <h2 id="page">Applying AgroEcological Principles to Harm Minimizing Website Design</h2>
-
-    <p>The surveillance apparatus on a typical webpage transfers more data, burns more electricity, and runs more of the supply chain described above than everything you are reading.</p>
-
-    <ul>
-        <li>The average webpage is over 600 times larger than this one and makes 60 to 100 separate requests to load fonts, scripts, analytics, ad networks, and tracking pixels</li>
-        <li>A single custom web font file is 12 times this entire page</li>
-        <li>A single full-screen image at the top of a homepage is 118 times this page</li>
-        <li>A single tracking pixel with its <abbr title="Hypertext Transfer Protocol">HTTP</abbr> headers is about a third of this page, and most websites load dozens</li>
-    </ul>
-
-    <p>This is a single <abbr title="Hypertext Markup Language">HTML</abbr> file. No JavaScript. No external requests. No images. No tracking. No cookies. No remote fonts. One <abbr title="Hypertext Transfer Protocol">HTTP</abbr> request, one response, done.</p>
-
-    <ul>
-        <li>Under 4 <abbr title="kilobytes">KB</abbr> compressed</li>
-        <li>1 request</li>
-        <li>0 third parties</li>
-    </ul>
-
-    <p>The background is black because over half of screens sold today are <abbr title="Organic Light-Emitting Diode">OLED</abbr>, where black pixels are electrically off. Research has measured up to 63% display power reduction from dark interfaces on OLED.</p>
-
-    <p>The text is pure green because only the green subpixel fires. The human eye is not equally sensitive to all wavelengths of light. Photopic vision peaks at 555 nm, which is green. This sensitivity acts as a multiplier on emitter efficiency: the eye extracts more legibility per watt from green than from any other color on the screen.</p>
-
-    <ul>
-        <li>Green phosphorescent emitters: 20&ndash;30% electron-to-photon conversion, 60&ndash;100 candelas per amp</li>
-        <li>Red phosphorescent emitters: 20&ndash;25% conversion, 15&ndash;30 candelas per amp</li>
-        <li>Blue fluorescent emitters: 5&ndash;8% conversion, 3&ndash;10 candelas per amp</li>
-    </ul>
-
-    <p>Manufacturers build blue subpixels physically larger and drive more current through them to compensate. Blue light at 460&ndash;480 nm also suppresses melatonin production by activating melanopsin receptors in the retina, disrupting circadian rhythm and degrading sleep.</p>
-
+<h2 id="page">Applying AgroEcological Principles to Harm Minimizing Website Design</h2>
+<p>The surveillance apparatus on a typical webpage transfers more data, burns more electricity, and runs more of the supply chain described above than everything you are reading.</p>
+<ul>
+<li>The average webpage is over 600 times larger than this one and makes 60 to 100 separate requests to load fonts, scripts, analytics, ad networks, and tracking pixels</li>
+<li>A single custom web font file is 12 times this entire page</li>
+<li>A single full-screen image at the top of a homepage is 118 times this page</li>
+<li>A single tracking pixel with its <abbr title="Hypertext Transfer Protocol">HTTP</abbr> headers is about a third of this page, and most websites load dozens</li>
+</ul>
+<p>This is a single <abbr title="Hypertext Markup Language">HTML</abbr> file. No JavaScript. No external requests. No images. No tracking. No cookies. No remote fonts. One <abbr title="Hypertext Transfer Protocol">HTTP</abbr> request, one response, done.</p>
+<ul>
+<li>Under 4 <abbr title="kilobytes">KB</abbr> compressed</li>
+<li>1 request</li>
+<li>0 third parties</li>
+</ul>
+<p>The background is black because over half of screens sold today are <abbr title="Organic Light-Emitting Diode">OLED</abbr>, where black pixels are electrically off. Research has measured up to 63% display power reduction from dark interfaces on OLED.</p>
+<p>The text is pure green because only the green subpixel fires. The human eye is not equally sensitive to all wavelengths of light. Photopic vision peaks at 555 nm, which is green. This sensitivity acts as a multiplier on emitter efficiency: the eye extracts more legibility per watt from green than from any other color on the screen.</p>
+<ul>
+<li>Green phosphorescent emitters: 20&ndash;30% electron-to-photon conversion, 60&ndash;100 candelas per amp</li>
+<li>Red phosphorescent emitters: 20&ndash;25% conversion, 15&ndash;30 candelas per amp</li>
+<li>Blue fluorescent emitters: 5&ndash;8% conversion, 3&ndash;10 candelas per amp</li>
+</ul>
+<p>Manufacturers build blue subpixels physically larger and drive more current through them to compensate. Blue light at 460&ndash;480 nm also suppresses melatonin production by activating melanopsin receptors in the retina, disrupting circadian rhythm and degrading sleep.</p>
 </section>
-
 <footer>
-    <p>You can steal this website. Press Ctrl+U (Windows/Linux) or Cmd+Option+U (Mac) to see the source code. Select all of it, copy it, and paste it into any text editor. Notepad, TextEdit, or anything that saves plain text. Save the file as index.html. Open that file in your browser. You now have a working website on your computer. The text you are reading lives between &lt;p&gt; and &lt;/p&gt; tags. Change the words between those tags to your own words. Change the title between the &lt;title&gt; tags. Change the email. Leave everything else alone. To put it online, upload that one file to any static web host. Neocities is free. Nearly Free Speech costs fractions of a cent. You do not need a web developer.</p>
+<p>You can steal this website. Press Ctrl+U (Windows/Linux) or Cmd+Option+U (Mac) to see the source code. Select all of it, copy it, and paste it into any text editor. Notepad, TextEdit, or anything that saves plain text. Save the file as index.html. Open that file in your browser. You now have a working website on your computer. The text you are reading lives between &lt;p&gt; and &lt;/p&gt; tags. Change the words between those tags to your own words. Change the title between the &lt;title&gt; tags. Change the email. Leave everything else alone. To put it online, upload that one file to any static web host. Neocities is free. Nearly Free Speech costs fractions of a cent. You do not need a web developer.</p>
 </footer>
-
 </article>
 </main>
-
 </body>
 </html>
