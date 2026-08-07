@@ -17,6 +17,37 @@
 <p>We do not need a website for any of that. What happens if you don't have a website? Banks, insurers, grant programs, government registries, payment processors, and credentialing systems all balk at dealing with an organization that doesn't have one, making refusal costly enough to be a compulsory display of &ldquo;legitimacy&rdquo;. No law requires a website, but a social norm that nobody privately supports and ineffective security kayfabe and compliance theater can bind more tightly than legislation. The empirical expectations (what you see others doing) and normative expectations (what you believe others think you should do) can both be wrong simultaneously: everyone complies, everyone assumes everyone else approves, even if nobody actually does.</p>
 <p>If you are a bureaucrat discerning whether we are real and not scoundrels, we will plant a tree in your honor for free and text you a photo of it being planted with someone holding a piece of paper with your name written on it. The tree will produce oxygen you need to breathe, remove CO2 from the atmosphere, and create food and habitat for animals. You can even arrange a visit.</p>
 <p>The web has existed a mere 0.011% of <em>Homo sapiens</em>' 315,000 years. When a website as a representation becomes more socially powerful than the real thing it represents, the website is no longer an appropriate technology aiding a healthy functioning society; it is a dystopian simulacrum replacing it. Is it suspicious and unprofessional to not have a website when it doesn't directly serve a charitable purpose and runs counter to that purpose?</p>
+
+<section aria-labelledby="cost">
+<h2 id="cost">The Internet Is Not a Cloud</h2>
+<p>It is a supply chain of extraction, combustion, and human suffering that delivers text to a screen.</p>
+<p>Every website runs on a server in a data center consuming electricity for computation and cooling. Roughly 60% of global electricity comes from burning coal, gas, and oil. The hardware requires cobalt, lithium, coltan, copper, tin, tungsten, and rare earth elements. Getting them out of the ground means child miners in hand-dug tunnels in the DRC, millions of liters of water drained from drought-stricken salt flats in South America, radioactive tailings from rare earth processing that poison soil and waterways for decades, tropical forests stripped for tin and tungsten, and copper extraction that generates more toxic waste by volume than any other metal on earth. Refining and smelting these minerals is powered by fossil fuels. The finished hardware crosses oceans on ships burning bunker fuel, the dirtiest fossil fuel in commercial use. It lands in data centers that drink millions of gallons of water for cooling, run industrial air conditioning around the clock, and draw their electricity from coal and gas power plants that poison the air in the communities surrounding them.</p>
+<p>On the human end, the people who mine these minerals suffer collapsed lungs, heavy metal poisoning, crushed limbs, and shortened lives. The communities near processing sites lose their water, their soil, and their children's health. The laborers assembling the hardware work under conditions that have produced mass suicide clusters at factories. The energy infrastructure powering the data centers contributes to respiratory disease, cancer, and climate displacement borne disproportionately by the poorest people on earth.</p>
+</section>
+<section aria-labelledby="page">
+<h2 id="page">Harm Minimizing Website Design</h2>
+<p>The surveillance apparatus on a typical webpage transfers more data, burns more electricity, and runs more of the supply chain described above than everything you are reading.</p>
+<ul>
+<li>The average webpage is over 600 times larger than this one and makes 60 to 100 separate requests to load fonts, scripts, analytics, ad networks, and tracking pixels</li>
+<li>A single custom web font file is 12 times this entire page</li>
+<li>A single full-screen image at the top of a homepage is 118 times this page</li>
+<li>A single tracking pixel with its <abbr title="Hypertext Transfer Protocol">HTTP</abbr> headers is about a third of this page, and most websites load dozens</li>
+</ul>
+<p>This is a single <abbr title="Hypertext Markup Language">HTML</abbr> file. No JavaScript. No external requests. No images. No tracking. No cookies. No remote fonts. One <abbr title="Hypertext Transfer Protocol">HTTP</abbr> request, one response, done.</p>
+<ul class="stats">
+<li>4.3 <abbr title="kilobytes">KB</abbr> over the wire</li>
+<li>1 request</li>
+<li>0 third parties</li>
+</ul>
+<p>The background is black because over half of screens sold today are <abbr title="Organic Light-Emitting Diode">OLED</abbr>, where black pixels are electrically off. Research has measured up to 63% display power reduction from dark interfaces on OLED.</p>
+<p>The text is pure green because only the green subpixel fires. The human eye is not equally sensitive to all wavelengths of light. Photopic vision peaks at 555 nm, which is green. This sensitivity acts as a multiplier on emitter efficiency: the eye extracts more legibility per watt from green than from any other color on the screen.</p>
+<ul>
+<li>Green phosphorescent emitters: 20&ndash;30% electron-to-photon conversion, 60&ndash;100 candelas per amp</li>
+<li>Red phosphorescent emitters: 20&ndash;25% conversion, 15&ndash;30 candelas per amp</li>
+<li>Blue fluorescent emitters: 5&ndash;8% conversion, 3&ndash;10 candelas per amp</li>
+</ul>
+<p>Manufacturers build blue subpixels physically larger and drive more current through them to compensate. Blue light at 460&ndash;480 nm also suppresses melatonin production by activating melanopsin receptors in the retina, disrupting circadian rhythm and degrading sleep.</p>
+</section>
 <p><a href="/">&larr; Back</a></p>
 </main>
 </body>
